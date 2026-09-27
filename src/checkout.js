@@ -1,8 +1,7 @@
 function checkout(order, paymentService) {
-  return paymentService.charge(order.total).then(() => {
-    order.status = 'confirmed';
-    return order;
-  });
+  paymentService.charge(order.total);
+  order.status = 'confirmed';
+  return Promise.resolve(order);
 }
 
 module.exports = { checkout };
