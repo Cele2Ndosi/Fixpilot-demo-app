@@ -1,0 +1,12 @@
+{
+  "name": "fixpilot-demo-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Seeded target app for FixPilot to investigate - see fixpilot's build guide, Iteration 1.",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
